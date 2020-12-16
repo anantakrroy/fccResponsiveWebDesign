@@ -1,0 +1,170 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#nav-bar {
+    padding: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+a:hover {
+    text-transform: uppercase;
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+.nav-link {
+    padding: 0 8px;
+}
+
+#images-section, #product-info, #product-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.feature {
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 0 7px gray;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.feature:hover {
+    box-shadow: 0 0 7px blueviolet;
+    transform: scale(1.1);
+}
+
+h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.slideImgBtn {
+    height: 40px;
+    width: 40px;
+    background-color: gray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.slideImgBtn:hover {
+    background-color: rgb(35, 45, 150);
+    transform: scale(1.05);
+}
+
+#slider {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.prod-img {
+    width: 150px;
+    height: auto;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+#video-section {
+    display: grid;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+video {
+    margin: auto;
+}
+
+h2 {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+video {
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 15px black;
+}
+
+#buy {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buy-options {
+    display: grid;
+    padding: 10px;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.buy-button {
+    background-color: rgb(160, 101, 13);
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    width: 90px;
+}
+
+.buy-button:hover {
+    transform: scale(1.2);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#submit {
+    padding: 10px;
+    width: 80px;
+    background-color: rgb(42, 42, 202);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 0 3px blue;
+}
+
+#email {
+    margin: 0 10px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 0 3px blue;
+}
+
+footer {
+    display: inline;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 100;
+    font-size: 0.8em;
+    margin: 10px 0;
+}
+
+@media (max-width: 425px) {
+    #product-info, #features, #video-section, video {
+        display: block;
+        max-width: 100%;
+    }
+}

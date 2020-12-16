@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <img src="./imgs/logo.png" width="100px" height="100px" alt="Logo" id="header-img">
+        <nav id="nav-bar">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#video-section" class="nav-link">Product Video</a>
+            <a href="#buy" class="nav-link">Buy</a>
+        </nav>
+    </header>
+    <main role="main">
+        <div id="product-info">
+            <div id="images-section">
+                <div class="slideImgBtn">
+                    <button id="slider" onclick="idxChange(-1)"><</button>
+                </div>
+                <div id="product-imgs">
+                    <img class="prod-img" src="./imgs/front.jpeg" alt="Front view">
+                    <img class="prod-img" src="./imgs/front_cam.jpeg" alt="Camera pop up">
+                    <img class="prod-img" src="./imgs/back.jpeg" alt="Back view">
+                    <img class="prod-img" src="./imgs/bottom.jpeg" alt="Botton view">
+                    <img class="prod-img" src="./imgs/camera.jpeg" alt="Camera module">
+                    <img class="prod-img" src="./imgs/overall.jpeg" alt="Overall view">
+                </div>
+                <div class="slideImgBtn">
+                    <button id="slider" onclick="idxChange(1)">></button>
+                </div>
+            </div>
+            <div id="features">
+                <p class="feature">
+                    6 GB RAM | 128 GB ROM | Expandable Upto 1 TB
+                </p>
+                <p class="feature">
+                    16.51 cm (6.5 inch) Full HD+ Display
+                </p>
+                <p class="feature">
+                    64MP + 8MP + 5MP + 2MP | 16MP Front Camera
+                </p>
+                <p class="feature">
+                    5000 mAh Lithium Polymer Battery
+                </p>
+                <p class="feature">
+                    Qualcomm Snapdragon 730G Processor
+                </p>
+                <p class="feature">
+                    Stock Android Experience
+                </p>
+            </div>
+        </div>
+        <div id="video-section">
+            <h2>Product teaser</h2>
+            <video id="video" onloadstart="this.volume=0.10" controls width="500px" src="./imgs/video.mp4">Watch trailer</video>
+        </div>
+        <div id="buy">
+            <div class="buy-options">
+                <p class="payment-info">Pay full amount now and enjoy reduced price</p>
+                <input type="button" formaction="#" value="Pay now" class="buy-button">
+            </div>
+            <div class="buy-options">
+                <p class="payment-info">Get your favorite product on low interest EMIs </p>
+                <input type="button" formaction="#" value="EMI" class="buy-button">
+            </div>
+            <div class="buy-options">
+                <p class="payment-info">Use your favorite prepaid wallet cards</p>
+                <input type="button" formaction="#" value="Wallets" class="buy-button">
+            </div>
+        </div>
+    </main>
+    <section>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" name="email" id="email" placeholder="Enter your email for exciting offers">
+            <input type="submit" value="Submit" formaction="https://www.freecodecamp.com/email-submit" id="submit">
+        </form>
+    </section>
+    <footer>
+        <p>Copyright Tomorola</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
