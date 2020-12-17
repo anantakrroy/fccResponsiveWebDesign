@@ -12,11 +12,21 @@
 
 <body>
     <header id="header">
-        <img src="./imgs/logo.png" width="100px" height="100px" alt="Logo" id="header-img">
+        <img src="./imgs/logo.png" width="80px" height="100%" alt="Logo" id="header-img">
         <nav id="nav-bar">
             <a href="#features" class="nav-link">Features</a>
             <a href="#video-section" class="nav-link">Product Video</a>
             <a href="#buy" class="nav-link">Buy</a>
+        </nav>
+        <nav id="mobile-nav" onclick="showMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div id="hide-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#video-section" class="nav-link">Product Video</a>
+                <a href="#buy" class="nav-link">Buy</a>
+            </div>
         </nav>
     </header>
     <main role="main">
@@ -60,7 +70,8 @@
         </div>
         <div id="video-section">
             <h2>Product teaser</h2>
-            <video id="video" onloadstart="this.volume=0.10" controls width="500px" src="./imgs/video.mp4">Watch trailer</video>
+            <video id="video" onloadstart="this.volume=0.10" controls width="500px" src="./imgs/video.mp4">Watch
+                trailer</video>
         </div>
         <div id="buy">
             <div class="buy-options">
@@ -79,12 +90,12 @@
     </main>
     <section>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input type="email" name="email" id="email" placeholder="Enter your email for exciting offers">
+            <input type="email" name="email" id="email" placeholder="Enter your email for exciting offers" required>
             <input type="submit" value="Submit" formaction="https://www.freecodecamp.com/email-submit" id="submit">
         </form>
     </section>
     <footer>
-        <p>Copyright Tomorola</p>
+        <p>&#169;    Tomorola</p>
     </footer>
 
     <!-- Scripts -->
