@@ -135,6 +135,7 @@ video {
 
 .buy-button:hover {
     transform: scale(1.2);
+    cursor: help;
 }
 
 section {
@@ -230,7 +231,30 @@ footer {
         margin: 5px;
     }
     .buy-options {
+        display: flex;
+        flex-direction: column;
         font-size: 0.9em;
         text-align: center;
     }
+    p.payment-info {
+        flex-grow: 2;
+    }
 }
+
+@media (pointer: coarse), (hover: none) {
+    [title] {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+    }
+    [title]:focus::after {
+      content: attr(title);
+      position: absolute;
+      top: 90%;
+      color: #000;
+      background-color: #fff;
+      border: 1px solid;
+      width: fit-content;
+      padding: 3px;
+    }
+  }
